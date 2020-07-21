@@ -1,4 +1,4 @@
-#HADE Co Code
+# HADE Co Code
 This Repository contains scripts written by Hade Co.
 
 ## FlatDB
