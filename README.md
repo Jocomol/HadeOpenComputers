@@ -1,8 +1,8 @@
 # HADE Co Code
 This Repository contains scripts written by Hade Co.
 
-## FlatDB
-First tries to make an database.
-
-## clock.lua
+## clock
 Clock script for sending redstone signals in an interval.
+
+## drone
+The scripts for the drones.
