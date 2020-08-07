@@ -15,6 +15,10 @@ local function parseURL(url)
  return proto, host, port, path
 end
 
+local function parse(text)
+
+  print(text)
+
 local function getFile(argument, tFlags)
   local proto, host, port, path = parseURL(argument)
   port = tonumber(port) or 70
@@ -32,16 +36,18 @@ local function getFile(argument, tFlags)
   until c ~= ""
   if c == "n" then
    print(path..": Not found.")
-  elseif c == "f" then
+ elseif c == "f" then
    print("Failure: ")
   elseif c == "d" then
    print("Directory listing for "..path)
   end
-  repeat
+  --[[repeat
    l = socket:read(1024)
    io.write(l)
    os.sleep(0.5)
-  until socket.state == "closed" and l == ""
+ until socket.state == "closed" and l == "" ]]--
+  l = socket:read(1024)
+  print(l)
 end
 
 
